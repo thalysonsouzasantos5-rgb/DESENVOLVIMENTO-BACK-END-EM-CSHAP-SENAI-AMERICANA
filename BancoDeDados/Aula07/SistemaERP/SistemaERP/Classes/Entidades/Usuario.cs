@@ -8,8 +8,15 @@ namespace SistemaERP.Classes.Entidades
         //Propiedades
         public int Id { get; set; }
         public string NomeDoUsuario { get; set; }
-        public string Email { get; set; }
         public string SenhaDoUsuario { get; set; }
-        public object Regra { get; internal set; }
+        public int Regra { get; set; }
+        
+        //Construtor
+        public Usuario(string nomeDoUsuario, string senhaDoUsuario, int regra)
+        {
+            NomeDoUsuario = nomeDoUsuario;
+            SenhaDoUsuario = senhaDoUsuario;
+            Regra = rregra;
+        }
     }
 }
